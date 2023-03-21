@@ -1,0 +1,107 @@
+.video-swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -3;
+}
+.video__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .6);
+  transition: .6s ease all;
+}
+.video__overlay_active {
+  background-color: rgba(0, 0, 0, .8);
+}
+.swiper-video {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.swiper-video__toggle-btn-circle-icon {
+  display: block;
+  height: 100%;
+  left: 50%;
+  overflow: visible;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-90deg);
+  width: 100%;
+}
+.swiper-video__toggle-btn-circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dasharray: 125.6;
+  stroke-dashoffset: 125.6;
+  -webkit-animation: circleFilling 6s ease-in-out infinite;
+  animation: circleFilling 6s ease-in-out infinite;
+  display: block;
+}
+.swiper-video__toggle-btn-circle-static {
+  fill: none;
+  stroke: rgba(255,255,255,.3);
+  stroke-width: 1px;
+}
+.swiper-video__btn-container {
+  position: absolute;
+  top: 20.5%;
+  left: 52%;
+  width: 17rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes circleFilling {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -125.6;
+  }
+}
+.video-button-next {
+  z-index: 100;
+  width: 7rem;
+  height: 7rem;
+}
+.video-button-next::after {
+  color: white;
+  font-size: 2.5rem;
+  padding-left: .5rem;
+}
+.video-button-prev::after {
+  color: white;
+  font-size: 2.5rem;
+  padding-left: .5rem;
+}
+
+@media screen and (max-width: 1240px){
+  .swiper-wrapper {
+    display: none;
+  }
+  .swiper-video__btn-container {
+    display: none;
+  }
+  .video-swiper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/images/mainImg/tenthFlat.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

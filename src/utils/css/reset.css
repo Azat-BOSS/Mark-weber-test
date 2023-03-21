@@ -1,0 +1,26 @@
+html {
+  font-size: 0.42vw;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

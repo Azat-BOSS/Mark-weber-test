@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.75fr 1fr;
+}
+.medium-font {
+  font-family: "CoreSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.bg-style {
+  background: rgba(255, 255, 255, 0.16);
+}

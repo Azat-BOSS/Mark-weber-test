@@ -1,0 +1,61 @@
+<section class="filter">
+  <div class="filter__container">
+    
+    <div class="filter__block">
+      <h5 class="medium-font filter__block-title">Количество комнат</h6>
+      <div class="filter__btns-block">
+        <button class="filter__btn bg-style medium-font">cтудия</button>
+        <button class="filter__btn bg-style medium-font">1</button>
+        <button class="filter__btn bg-style medium-font">2</button>
+        <button class="filter__btn bg-style medium-font">3</button>
+        <button class="filter__btn bg-style medium-font">4</button>
+      </div>
+    </div>
+
+    <div class="filter__block">
+      <h5 class="medium-font filter__block-title">Площадь</h6>
+      <div class="filter__filter-block">
+        <input type="number" min="32" max="186" class="filter__block-slider medium-font bg-style filter__block_one"/>
+        <input type="number" class="filter__block-slider medium-font bg-style filter__block_two"/>
+        <span class="filter__ui-slider"></span>
+      </div>
+    </div>
+
+    <div class="filter__block">
+      <h5 class="medium-font filter__block-title">Стоимость, млн ₽</h6>
+      <div class="filter__filter-block">
+        <input type="number" min="1.5" max="17.5" class="filter__block-slider medium-font bg-style filter__block-cost_one"/>
+        <input type="number" class="filter__block-slider medium-font bg-style filter__block-cost_two"/>
+        <span class="filter__ui-slider filter__cost-slider"></span>
+      </div>
+    </div>
+
+    <div class="filter__block">
+      <h5 class="medium-font filter__block-title">Жилой комплекс</h6>
+        <select class="filter__select medium-font">
+          <option data-display="Северный парк"></option>
+          <option data-display="Cтанция Столичная"></option>
+          <option data-display="Лето"></option>
+          <option data-display="Сказочный дом"></option>
+          <option data-display="Краски"></option>
+          <option data-display="Реннесанс"></option>
+          <option data-display="Компасс сити"></option>
+          <option data-display="Бруклин"></option>
+        </select>
+    </div>
+
+    <button class="filter__button medium-font">
+      <img src="/images/icons/filterIcon.svg" alt="filterIcon">
+      Еще <br>фильтры
+    </button>
+    <button class="show__button medium-font">
+      Показать 120 квартир
+    </button>
+  </div>
+  <div class="filter__mobile medium-font">
+    <div class="filter__mobile-block">
+      <input type="text" placeholder="Подобрать квартиру" class="filter__mobile-input">
+      <img src="/images/icons/Search.svg" alt="icon" class="filter__mobile-icon">
+    </div>
+  </div>
+</section>

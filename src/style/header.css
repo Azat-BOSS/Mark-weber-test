@@ -1,0 +1,70 @@
+.header__container {
+  height: 10rem;
+  align-items: center;
+}
+.header__logo {
+  width: 24rem;
+  height: 10rem;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.header__number {
+  font-family: "CoreSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+.header__work-time {
+  color: #FFFFFF;
+  opacity: .5;
+}
+.header__nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  column-gap: 3rem;
+  height: 4rem;
+  margin-top: .5rem;
+}
+.header__li  {
+  display: flex;
+  flex-direction: column;
+  transition: .4s ease all;
+}
+.header__link {
+  transition: .4s ease all;
+}
+.header__link_active {
+  opacity: 0;
+  overflow: hidden;
+  transition: .4s ease all;
+  color: white;
+}
+.header__li:hover > .header__link_active {
+  opacity: .5;
+  overflow: visible;
+  transform: translateY(-2rem);
+}
+.header__li:hover .header__link {
+  transform: translateY(-2rem);
+  opacity: 0;
+  visibility: hidden;
+}
+.header__btn {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 3.8rem;
+  row-gap: 1rem;
+}
+.header__btn-line {
+  display: block;
+  width: 7rem;
+  border: 1px solid white;
+}
