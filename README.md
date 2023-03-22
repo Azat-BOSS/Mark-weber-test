@@ -19,4 +19,4 @@ yarn run dev
 yarn run build
 ```
 
-[Сайт на Netlify](https://main--snazzy-pothos-a4f660.netlify.app/)
+[Сайт на Netlify](https://changes--glowing-cactus-bfd034.netlify.app/)
