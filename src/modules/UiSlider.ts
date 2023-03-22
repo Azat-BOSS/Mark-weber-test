@@ -1,6 +1,6 @@
 import noUiSlider from "nouislider"
 import { IUISlider } from "../utils/interfaces/interfaces"
-import { arrNum, TRange, TUIinit, TcheckInputNumber } from "../utils/types/types"
+import { arrNum, TRange } from "../utils/types/types.d"
 
 class UISlider implements IUISlider {
   arrStart: arrNum
@@ -11,7 +11,7 @@ class UISlider implements IUISlider {
     this.range = range
   }
 
-  set initUiSlider(options: TUIinit) {
+  set initUiSlider(options: any) {
     noUiSlider.create(options.elem, {
       start: options.arrStart,
       connect: true,
@@ -21,7 +21,7 @@ class UISlider implements IUISlider {
       }
     })
   }
-  set checkInputNumber(options: TcheckInputNumber) {
+  set checkInputNumber(options: any) {
     options.elem.addEventListener("input", (): void => {
       console.log(options.elem.value > options.min)
       if(options.elem.value < options.min) options.elem.value = options.min

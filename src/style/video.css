@@ -85,7 +85,7 @@
 }
 
 @media screen and (max-width: 1240px){
-  .swiper-wrapper {
+  .video-wrapper {
     display: none;
   }
   .swiper-video__btn-container {

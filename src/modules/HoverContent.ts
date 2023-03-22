@@ -1,6 +1,5 @@
 import Hover from "./Hover"
-import { TElement } from "../utils/types/types"
-import { THoverData } from "../utils/types/types"
+import { TElement, THoverData } from "../utils/types/types.d"
 
 class HoverContent extends Hover {
   readonly contentButtons: NodeListOf<Element>

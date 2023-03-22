@@ -1,10 +1,10 @@
 import { ISelect } from "../utils/interfaces/interfaces"
 
 class Select implements ISelect {
-  readonly classSelect: string
+  readonly classSelect: Element | null
   readonly selectText: string
   
-  constructor(classSelect: string, selectText: string) {
+  constructor(classSelect: Element | null, selectText: string) {
     this.classSelect = classSelect
     this.selectText = selectText
 
@@ -12,11 +12,11 @@ class Select implements ISelect {
   }
 
   public get selectOptions() {
-    return NiceSelect.bind(document.querySelector(this.classSelect)) 
+    return NiceSelect.bind(this.classSelect) 
   }
 
   public get changeSelectOption() {
-    const current = document.querySelector(`${this.classSelect} .current`)
+    const current = document.querySelector(`.filter__select .current`)
     current.textContent = this.selectText
     return current
   }

@@ -14,7 +14,8 @@ import {
   secondFilterBlock,
   filterCostSpan,
   firstCostBlock,
-  secondCostBlock
+  secondCostBlock,
+  filterSelect
 } from "./utils/constants/constants"
 
 new HoverContent(hoverData, contentButtons, contentInfo, videoOverlay)
@@ -34,7 +35,7 @@ new CostSlider(
   secondCostBlock
 )
 
-new Select(".filter__select", "Северный парк")
+new Select(filterSelect, "Северный парк")
 
 
 

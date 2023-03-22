@@ -1,11 +1,11 @@
 import AreaSlider from "./AreaSlider";
-import { arrNum, TRange } from "../utils/types/types";
+import { arrNum, TRange } from "../utils/types/types.d";
 
 class CostSlider extends AreaSlider {
   constructor(
     arrStart: arrNum, 
     range: TRange, 
-    uiElem: Element, 
+    uiElem: Element | null, 
     firstFilterBlock: HTMLInputElement, 
     secondFilterBlock: HTMLInputElement
   ) {

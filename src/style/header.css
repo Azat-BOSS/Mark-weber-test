@@ -68,3 +68,43 @@
   width: 7rem;
   border: 1px solid white;
 }
+.header__right-block {
+  display: none;
+}
+@media screen and (max-width: 1240px){
+  .header__right-block {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+  .header__icon_mobile {
+    width: 36px;
+    height: 36px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__info {
+    display: none;
+  }
+  .header__container  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 150px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .header__btn {
+    margin-right: 10px;
+    display: flex;
+    margin-left: 0;
+    width: 50px;
+    height: 10px;
+    row-gap: 5px;
+  }
+  .header__btn-line {
+    width: 40px;
+  }
+}

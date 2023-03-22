@@ -1,6 +1,6 @@
 import UISlider from "./UiSlider"
 import { IAreaUISlider } from "../utils/interfaces/interfaces"
-import { arrNum, TRange, TSliderInst } from "../utils/types/types"
+import { arrNum, TRange, TSliderInst } from "../utils/types/types.d"
 
 class AreaSlider extends UISlider implements IAreaUISlider {
   arrStart: arrNum
