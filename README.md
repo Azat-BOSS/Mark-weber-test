@@ -10,6 +10,11 @@
 - Swiper
 - NoUiSlider
 
+## Скачать зависимости
+```
+yarn
+```
+
 ## Режим разработки
 ```
 yarn run dev
