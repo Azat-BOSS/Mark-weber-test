@@ -55,10 +55,10 @@
   position: absolute;
   top: 20.5%;
   left: 52%;
-  width: 17rem;
+  width: 18rem;
   height: 30rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 @keyframes circleFilling {
   0% {
@@ -77,6 +77,11 @@
   color: white;
   font-size: 2.5rem;
   padding-left: .5rem;
+}
+.video-button-prev {
+  z-index: 100;
+  width: 7rem;
+  height: 7rem;
 }
 .video-button-prev::after {
   color: white;
